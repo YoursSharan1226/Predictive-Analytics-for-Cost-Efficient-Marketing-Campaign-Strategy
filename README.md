@@ -23,21 +23,25 @@ This perspective emphasizes applied machine learning as a decision optimization 
 * Exploration of income distribution and spending behavior
 * Evaluation of past campaign acceptance patterns
 * Identification of potential predictive signals
+
 ### **2. Feature Engineering**
 * Creation of Total_Spend from multiple purchase categories
 * Engineering of Age and Customer_Tenure features
 * Median imputation of missing income values with a missing indicator flag
 * One-hot encoding of categorical variables
+
 ### **3. Modeling**
 * Logistic Regression as an interpretable baseline
 * XGBoost as a non-linear comparison model
 * Stratified train-test split to preserve class distribution
 * Probability-based ranking approach for decision evaluation
+
 ### **4. Evaluation Strategy**
 * ROC Curve and AUC
 * Cumulative Gains Curve
 * Top-K capture rate analysis (10% and 30% targeting)
 * ROI simulation under campaign cost assumptions
+
 ## **ROI Simulation**
 Under assumed conditions:
 Cost per contact: $1
