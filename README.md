@@ -18,22 +18,22 @@ The model does not change customer behavior. Instead, it improves how marketing 
 Rather than asking, “How accurate is the model?”, the focus shifts to, “How efficiently can marketing budget be allocated while preserving conversions?”
 This perspective emphasizes applied machine learning as a decision optimization tool rather than purely a classification exercise.
 ## **Methodology**
-**1. Exploratory Data Analysis (EDA)**
+### **1. Exploratory Data Analysis (EDA)**
 * Analysis of target imbalance (approximately 15% response rate)
 * Exploration of income distribution and spending behavior
 * Evaluation of past campaign acceptance patterns
 * Identification of potential predictive signals
-**2. Feature Engineering**
+### **2. Feature Engineering**
 * Creation of Total_Spend from multiple purchase categories
 * Engineering of Age and Customer_Tenure features
 * Median imputation of missing income values with a missing indicator flag
 * One-hot encoding of categorical variables
-**3. Modeling**
+### **3. Modeling**
 * Logistic Regression as an interpretable baseline
 * XGBoost as a non-linear comparison model
 * Stratified train-test split to preserve class distribution
 * Probability-based ranking approach for decision evaluation
-**4. Evaluation Strategy**
+### **4. Evaluation Strategy**
 * ROC Curve and AUC
 * Cumulative Gains Curve
 * Top-K capture rate analysis (10% and 30% targeting)
